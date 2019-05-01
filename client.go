@@ -7,8 +7,6 @@ import (
 	host "github.com/libp2p/go-libp2p-host"
 )
 
-
-
 //generates libp2p host
 func generateHost(ctx context.Context, opts []libp2p.Option) (host.Host, error) {
 	host, err := libp2p.New(ctx, opts...,)
